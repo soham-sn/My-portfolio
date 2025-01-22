@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PortFolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2><span>SO</span>HAM</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h2>Hi, I'am <span>Soham</span><br>Narkar From India</h2>
+            </div>
+            <div class="img-box">
+                <img src="soham.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img
+                        src="me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <h4>My hobbies are listening music and I played
+                        cricket. My Strengths are that <br>I’m self motivated,
+                        hardworking and I quick learn to new things, my
+                        short-term goal <br>is to get job at a reputed company and my long-term goal is to achieve a
+                        higher<br> success in my career.</h4><br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AI</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Devlopment</span><br>Web app Devlopment</li>
+                            <li><span>App Devloment</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>Designing Web/App interfaces</li>
+                            <li><span>2022</span><br>Web app Devlopment</li>
+                            <li><span>2023</span><br>Building Androidos apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>I am 10th pass</li>
+                            <li><span>2022</span><br>I am 12th pass</li>
+                            <li><span>2023</span><br>B.C.A 1st year complited</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <center>
+                <h1 class="sub-title">Services</h1>
+            </center>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Get the best of both worlds with web design services that include digital marketing,
+                        from search engine optimization to site maintenance. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>AI Devloper</h2>
+                    <p>Get the best of both worlds with web design services that include digital marketing,
+                        from search engine optimization to site maintenance. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>App Devloper</h2>
+                    <p>Get the best of both worlds with web design services that include digital marketing,
+                        from search engine optimization to site maintenance. </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <center>
+                <h1 class="sub-title">PortFolio</h1>
+            </center>
+            <div class="work-list">
+                <div class="work">
+                    <img
+                        src="data:image/jpeg;base64,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">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#">Swip Up</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img
+                        src="https://th.bing.com/th/id/OIP.ILf5vj9_vfBtUcb4d4XfJwHaEK?w=290&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#">Swip Up</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img
+                        src="https://th.bing.com/th/id/OIP.Hi1JT_yA-h0um_JxnGztfgHaEI?w=323&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+                    <div class="layer">
+                        <h3>Market App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#">Swip Up</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> sohamnarkar2006@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 8652368079</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/enime" download class="btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+            <div class="copyright">
+                <p>copyright @soham. Made by Me <i class="fa-solid fa-heart"></i> this PortFolio</p>
+            </div>
+        </div>
+        <script src="portfolio.js"> </script>
+
+</body>
+
+</html>
